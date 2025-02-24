@@ -28,6 +28,7 @@ Tea Green: C7F9CC
             margin: 10px;
             padding: 10px;
             box-shadow: 10px 10px #122f42;
+            padding-bottom: 25px;
         }
         main {
             background-color: #38A3A5;
@@ -100,13 +101,21 @@ Tea Green: C7F9CC
             font-size: 10px;
         }
         a {
-            color: white;
-        }
-        a:hover {
             color: black;
         }
-        nav {
-            color: rgb(150,150,150);
+        a:hover {
+            color: green;
+        }
+        .navigate.right {
+            color: rgb(199, 199, 199);
+            position: absolute;
+            right: 2%;
+        }
+        a.navlinks {
+            color: rgb(219, 219, 219);
+        }
+        a.navlinks:hover {
+            color: rgb(31, 230, 0);
         }
     </style>
 </head>
@@ -116,14 +125,10 @@ Tea Green: C7F9CC
             <h1>Welcome to RytimeCorp!</h1>
             <img src="logo.png" id="logo" alt="logo">
         </div>
-        <nav>
-            <a href = "../">Home</a>
-            ||
-            <a href = "../introduction.html">Introcution</a>
-            ||
-            <a href = "../contract.html">Contract</a>
-            ||
-            <a href = "../realmonkeyconglomeracy/about.html">About Real Monkey</a>
+        <nav class="navigate right">
+            <a class="navlinks" href = "../realmonkeyconglomeracy/about.html">About Real Monkey</a> ||
+            <a class="navlinks" href = "./index.html">RytimeCorp</a> ||
+            <a class="navlinks" href = "../stuff/YoUr.-mOm's p4ag3.htm">Crapy Page</a>
         </nav>
     </header>
     <main>
@@ -188,7 +193,7 @@ Tea Green: C7F9CC
     </main>
     <footer>
         <p id="foot"><i>Created by rytimeCorp</i></p>
-        <p>Real storage comes from a Real Monkey.</p>
+        <p>Real storage comes from a <a href="./realmonkeyconglomeracy/about.html">Real Monkey</a>.</p>
         <!--Copy and pasted this coce from assignment directions-->
         <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
             <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">

@@ -21,6 +21,7 @@
         header {
             background-color: #5a3a31;
             padding: 5px;
+            padding-bottom: 25px;
         }
         main {
             background-color: #e3d888;
@@ -32,28 +33,35 @@
             padding: 5px;
             margin-top: 10px;
         }
+        .right {
+            position: absolute;
+            right: 2%;
+        }
         a {
-            color: grey;
+            color: black;
         }
         a:hover {
-            color: black;
+            color: green;
+        }
+        a.navlinks {
+            color: rgb(207, 207, 207);
+        }
+        a.navlinks:hover {
+            color: green;
         }
         nav {
             color: rgb(50,50,50);
         }
+        
     </style>
 </head>
 <body>
     <header>
         <h1>Real Monkey Cloud Storage</h1>
-        <nav>
-            <a href = "../">Home</a>
-            ||
-            <a href = "../introduction.html">Introcution</a>
-            ||
-            <a href = "../contract.html">Contract</a>
-            ||
-            <a href = "./about.html">About Real Monkey</a>
+        <nav class="navigate right">
+            <a class="navlinks" href = "./about.html">About Real Monkey</a> ||
+            <a class="navlinks" href = "../rytimecorp.org/index.html">RytimeCorp</a> ||
+            <a class="navlinks" href = "../stuff/YoUr.-mOm's p4ag3.htm">Crapy Page</a>
         </nav>
     </header>
     <main>
