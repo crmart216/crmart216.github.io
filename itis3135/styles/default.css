@@ -25,6 +25,9 @@ a:hover{
 a {
     color: rgb(255, 255, 255);
 }
+h2 > a {
+    color: rgb(223, 223, 223);
+}
 main {
     background-color: rgb(156, 98, 60);
     margin: 10px;
