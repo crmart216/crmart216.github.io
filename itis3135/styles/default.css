@@ -2,6 +2,15 @@ body {
     background-color: grey;
     font-family: sans-serif;
     color: rgb(185,185,185);
+    max-width: 1800px;
+    width: 98%;
+    margin: 0 auto;
+}
+.navWrap {
+    width: 1800px;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 header {
     background-color: rgb(0, 80, 53);
@@ -14,9 +23,12 @@ header {
     position: absolute;
 }
 .left {
+    align-items: left;
     left: 2%;
+    
 }
 .right {
+    align-items: right;
     right: 2%;
 }
 a:hover{
@@ -37,7 +49,6 @@ main {
     margin-top: 20px;
     padding: 10px;
     box-shadow: 10px 10px rgb(130, 90, 50);
-    
 }
 footer {
     background-color: rgb(17, 17, 17);
