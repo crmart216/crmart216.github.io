@@ -58,10 +58,12 @@ footer {
     padding: 5px;
     box-shadow: 10px 10px rgb(100,100,100);
 }
-figure {
-    text-align: center;
-}
 
+figure{
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+}
 .validate {
     text-decoration: none;
 }

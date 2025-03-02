@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables || ITIS 3135 || Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/tables.css">
+    <!--script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("./components/header.html");
+        });
+        $(function() {
+            $('#footer').load("./components/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h2>HTML Tables</h2>
+        <h3>Student data in a simple table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>CEO</td>
+                <td>ceo@rytimecorp.org</td>
+                <td>1.2 Billion</td>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>jackson@rytimecorp.org</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Emily</td>
+                <td>emily@rytimecorp.org</td>
+                <td>7,092.49</td>
+            </tr>
+            <tr>
+                <td>Nate</td>
+                <td>nate@rytimecorp.org</td>
+                <td>549</td>
+            </tr>
+            <tr>
+                <td>Sebi</td>
+                <td>sebi@rytimecorp.org</td>
+                <td>2.34 Trillion</td>
+            </tr>
+            <tr>
+                <td>Aron</td>
+                <td>araon@rytimecorp.org</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Dawson</td>
+                <td>dawson@rytimecorp.org</td>
+                <td>69</td>
+            </tr>
+        </table>
+        <h3>Employee data in complex Table</h3>
+        <figure id = "complexTable">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th style="width: 30%">Email</th>
+                    <th>Years of Service</th>
+                    <th style="width: 10%">Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan = 3 class="nobackground" style="background-color: rgba(0,0,0,0.20);">Coperate</td>
+                    <td>CEO</td>
+                    <td>ceo@rytimecorp.org</td>
+                    <td>1.2 Billion</td>
+                    <td>Undisclosed</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>jackson@rytimecorp.org</td>
+                    <td>5</td>
+                    <td>$12,450,000</td>
+                </tr>
+                <tr>
+                    <td>Emily</td>
+                    <td>emily@rytimecorp.org</td>
+                    <td>7,092.49</td>
+                    <td>$11,493,029</td>
+                </tr>
+                <tr>
+                    <td rowspan = 2 class="nobackground">Information<br>Technology</td>
+                    <td>Nate</td>
+                    <td>nate@rytimecorp.org</td>
+                    <td>549</td>
+                    <td>$159,000</td>
+                </tr>
+                <tr>
+                    <td>Sebi</td>
+                    <td>sebi@rytimecorp.org</td>
+                    <td>2.34 Trillion</td>
+                    <td>$296,000</td>
+                </tr>
+                <tr>
+                    <td rowspan = 2 class="nobackground">Accounting</td>
+                    <td>Aron</td>
+                    <td>araon@rytimecorp.org</td>
+                    <td>25</td>
+                    <td>$75,000</td>
+                </tr>
+                <tr>
+                    <td>Dawson</td>
+                    <td>dawson@rytimecorp.org</td>
+                    <td>69</td>
+                    <td>$85,000</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total Years of Service & Total Salary</td>
+                    <td>2,341,200,007,740.49</td>
+                    <td>$24,558,029</td>
+                </tr>
+            </table>
+            <figcaption>Table with employee data</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
