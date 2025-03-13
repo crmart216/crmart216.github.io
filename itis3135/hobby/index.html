@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2f1;
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            text-align: left;
+            padding: 20px;
+            padding-bottom: 30px;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        figure {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        figure img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            font-weight: bold;
+        }
+
+        .image-description {
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #004d40;
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #b2dfdb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cooking</h1>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showSection('home')">What is my hobby</a>
+        <a href="#" onclick="showSection('best-times')">Best Times</a>
+        <a href="#" onclick="showSection('best-locations')">Best Locations</a>
+        <a href="#" onclick="showSection('why')">Why Cook?</a>
+        <a href="#" onclick="showSection('how')">How to cook</a>
+        <a href="#" onclick="showSection('chat-history')">AI Chat History</a>
+    </nav>
+    
+    <main>
+        <section id="home" class="active">
+            <h2>I love Cooking</h2>
+            <p>Cooking is a fun and rewarding hobby that allows you to experiment with flavors, create delicious meals, and bring people together.</p>
+            <p>From baking to grilling, there are endless possibilities to explore in the kitchen.</p>
+            <figure>
+                <img src="./images/cooking-home.webp" alt="A delicious meal being prepared">
+                <figcaption>Cooking brings joy and creativity to life.</figcaption>
+                <p class="image-description">A beautifully plated homemade meal, showcasing the creativity and passion of cooking.</p>
+            </figure>
+        </section>
+        
+        <section id="best-times">
+            <h2>Best Times to Cook</h2>
+            <p>Discover the best times to cook and enjoy different types of meals.</p>
+            <p>Cooking in the morning can be a great way to start the day with a healthy meal.</p>
+            <figure>
+                <img src="./images/cooking-times.webp" alt="Cooking at different times of the day">
+                <figcaption>Each time of the day offers unique cooking opportunities.</figcaption>
+                <p class="image-description">A collection of cooking scenes representing morning, afternoon, and evening meal preparation.</p>
+            </figure>
+        </section>
+        
+        <section id="best-locations">
+            <h2>Best Locations</h2>
+            <p>Find out where to get the best ingredients and cook amazing dishes.</p>
+            <p>From farmer's markets to home gardens, fresh ingredients make a difference.</p>
+            <figure>
+                <img src="./images/market.webp" alt="Fresh produce at a market">
+                <figcaption>Fresh ingredients lead to the best meals.</figcaption>
+                <p class="image-description">A vibrant farmer's market with fresh fruits, vegetables, and other ingredients for cooking.</p>
+            </figure>
+        </section>
+        
+        <section id="why">
+            <h2>Why Cook?</h2>
+            <p>Explore the benefits of cooking and why it's a great hobby to pick up.</p>
+            <p>Cooking is not only practical but also therapeutic and a great way to express creativity.</p>
+            <figure>
+                <img src="./images/cooking-why.webp" alt="Happy people enjoying a meal">
+                <figcaption>Cooking brings people together.</figcaption>
+                <p class="image-description">A group of friends and family enjoying a home-cooked meal together, highlighting the joy of cooking.</p>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How to Cook</h2>
+            <p>Cooking is a fundamental skill that anyone can learn with a few simple steps.</p>
+            <p>Follow these steps to start your cooking journey:</p>
+            <ul>
+                <li>Gather all necessary ingredients and kitchen tools.</li>
+                <li>Prepare your ingredients by washing, chopping, and measuring them.</li>
+                <li>Follow a simple recipe, cooking each ingredient at the right time.</li>
+                <li>Season your dish to taste and serve it warm.</li>
+            </ul>
+            <figure>
+                <img src="./images/cooking-why.webp" alt="Happy people enjoying a meal">
+                <figcaption>Cooking brings people together.</figcaption>
+                <p class="image-description">A group of friends and family enjoying a home-cooked meal together, highlighting the joy of cooking.</p>
+            </figure>
+        </section>
+
+        <section id="chat-history">
+            <h2>AI Chat History</h2>
+            <p>This section contains all the prompts used to create this page.</p>
+            <figure>
+                <img src="./images/ai.webp" alt="Happy people enjoying a meal">
+                <figcaption>AI Dominates the world</figcaption>
+                <p class="image-description">Below is a list of every prompt I used to create this website. CHAT-GPT 4o was used</p>
+            </figure>
+            <ul>
+                <li>Style this webpage, using a blue green color scheme</li>
+                <li>Create sections which will represent each "page" (there is a section tag/element in html) for each of the pages that will make up your hobby site. These sections will be within your main:
+                    who (this name is a guide- you can change it to be something related, like "About Me" or "About" or "Who we Are")
+                    what (this will be your home page- and you can call it home, and it's what should load first, explain what the hobby is about )
+                    when (this name is a guide - you can change use it or change it to something like "Best Times" or "Schedule" or "Seasons" or something time related.
+                    where (this name is a guide and you can also change it to "best locations" or something like that)
+                    how
+                    why</li>
+                <li>Align body elements to the left, and give it some padding</li>
+                <li>don't align body elements, align main elements on the left</li>
+                <li>Each section should have an h2 that has the name of that page while the overall page should have a normal heading representing the whole site (as an h1). Each section should have AT MINIMUM three things under the h2... i.e. two paragraphs and a figure, a paragraph and two figures, a table, form, and a figure, etc...  A figure is an img and figcaption. A table counts as a thing. A form counts as a thing. A slideshow counts as a thing. A figure counts as a thing. Make it look nice and be creative. </li>
+                <li>create images for each image in the html document</li>
+                <li>create an image for cooking-times.jpg</li>
+                <li>create an image for market.jpg</li>
+                <li>create an image for cooking-why.jpg</li>
+                <li>Make all images smaller</li>
+                <li>create an image of AI dominating the world</li>
+                <li>You must also have an italicized paragraph below each figure.  (Image + figcaption + italicized paragraph explaining prompt = 1 thing) </li>
+                <li>create a nav bar that links to each section</li>
+                <li>add another section, just like the previous sections, that includes our chat history</li>
+                <li>add a new section, similar to the others, that also includes simple instructions on how to cook</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Designed by <a href = "../realmonkeyconglomeracy/about.html">Real Monkey Conglomerate</a></p>
+    </footer>
+</body>
+</html>
