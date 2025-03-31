@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload and Display</title>
+</head>
+<body>
+    <form id="imageForm">
+        <input type="file" id="imageInput" accept="image/*">
+    </form>
+
+    <div>
+        <img id="displayImage" src="#" alt="Uploaded Image" style="display:none; max-width: 400px; margin-top:10px;">
+    </div>
+
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    const displayImage = document.getElementById('displayImage');
+                    displayImage.src = e.target.result;
+                    displayImage.style.display = 'block';
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

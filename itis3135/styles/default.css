@@ -1,69 +1,347 @@
-body {
-    background-color: grey;
+/* Define color variables for easy maintenance */
+:root {
+    --bg-color: #808080; /* Grey background */
+    --font-color: rgb(185,185,185);
+    --header-bg: rgb(0,80,53);
+    --header-shadow: rgba(0,100,53, 0.5);
+    --main-bg: rgb(156,98,60);
+    --main-shadow: rgba(130,90,50, 0.5);
+    --footer-bg: rgb(17,17,17);
+    --footer-shadow: rgba(100,100,100, 0.5);
+    --link-color: rgb(255,255,255);
+    --link-hover: rgb(0,255,136);
+    --heading-color: rgb(223,223,223);
+    --nav-wrap: rgba(0, 73, 39, 0.5);
+  }
+  
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling for layout and typography */
+  body {
+    background-color: var(--bg-color);
     font-family: sans-serif;
-    color: rgb(185,185,185);
+    color: var(--font-color);
     max-width: 1800px;
     width: 98%;
     margin: 0 auto;
-}
-.navWrap {
-    width: 1800px;
-    white-space: nowrap;
-    overflow: hidden;
-
-}
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  /* Header Styling to Make It Pop More */
 header {
-    background-color: rgb(0, 80, 53);
+    background: linear-gradient(135deg, #006c48, #00947c);
     margin: 10px;
-    padding: 10px;
-    padding-bottom: 30px;
-    box-shadow: 10px 10px rgb(0, 100, 53);
-}
-.navigate {
-    position: absolute;
-}
-.left {
-    align-items: left;
-    left: 2%;
-    
-}
-.right {
-    align-items: right;
-    right: 2%;
-}
-a:hover{
-    color: rgb(0, 255, 136);
-}
-a {
-    color: rgb(255, 255, 255);
-}
-h3 > a {
-    color: rgb(223, 223, 223);
-}
-h2 {
-    color: rgb(223, 223, 223);
-}
-main {
-    background-color: rgb(156, 98, 60);
-    margin: 10px;
-    margin-top: 20px;
-    padding: 10px;
-    box-shadow: 10px 10px rgb(130, 90, 50);
-}
-footer {
-    background-color: rgb(17, 17, 17);
-    
-    margin: 10px;
-    margin-top: 20px;
-    padding: 5px;
-    box-shadow: 10px 10px rgb(100,100,100);
-}
+    box-shadow: 0 8px 16px rgba(0, 100, 53, 0.5);
+    border-radius: 8px;
+    position: relative;
+  }
 
-figure{
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
     text-align: center;
-    display: flexbox;
-    justify-content: center;
-}
-.validate {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .page-title-wrap {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 1150px) {
+    header h1 {
+        font-size: 2rem;
+    }
+  }
+  @media (max-width: 900px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 700px) {
+    header h1 {
+        font-size: 1rem;
+    }
+  }
+  @media (max-width: 500px) {
+    header h1 {
+        font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 300px) {
+    header h1 {
+        font-size: 0.5rem;
+    }
+  }
+  
+  /* Navigation Styling */
+  /* .navWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  
+  .navigate {
+    display: flex;
+    align-items: center;
+  } */
+  
+  /* Navigation Button Styling */
+/* .navigate a {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 25px;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-size: 1.1rem;
+    color: #fff;
     text-decoration: none;
-}
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  } */
+  
+  /* .navigate a:hover {
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+  } */
+  
+  .navWrap {
+    background-color: var(--nav-wrap);
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Adjust spacing between navigation links */
+  .navigate.left a, .navigate.right a {
+    margin: 0 5px;
+  }
+
+  .navigate.left {
+    float: left;
+  }
+
+  .navigate.right {
+    float: right;
+  }
+
+  /* Hide dropdowns by default */
+  .small-nav {
+    display: none;
+    justify-content: space-between; /* Positions dropdowns on opposite sides */
+    margin-top: 15px;
+  }
+
+  .leftDown {
+    min-width: 70px;
+    max-width: 100px;
+    margin-left: 10px;
+  }
+
+  .rightDown {
+    min-width: 90px;  
+    max-width: 120px;
+    margin-right: 10px;
+  }
+  
+  /* Dropdown menu appearance adjustments */
+  .navDropdown {
+    background: linear-gradient(135deg, #006c48, #00947c);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.9rem; /* smaller font size */
+    box-shadow: 0 2px 6px rgba(0, 100, 53, 0.4);
+    transition: background 0.3s ease, box-shadow 0.2s ease;
+    outline: none;
+    cursor: pointer;
+    width: 48%; /* ensures spacing and smaller width */
+  }
+
+  @media (max-width: 700px) {
+    .navDropdown {
+        font-size: 0.5rem;
+        width: 30%;
+    }
+  }
+  
+  /* Hover and focus styles */
+  .navDropdown:hover,
+  .navDropdown:focus {
+    background: linear-gradient(135deg, #008c68, #00b594);
+    box-shadow: 0 4px 8px rgba(0, 100, 53, 0.5);
+  }
+  
+  /* Option styling for dropdown */
+  .navDropdown option {
+    background-color: #006c48;
+    color: #fff;
+  }
+  
+  
+  /* Media Query to handle menu responsiveness */
+  @media (max-width: 1150px) {
+    .large-nav {
+      display: none;
+    }
+  
+    .small-nav {
+      display: flex;
+    }
+    .navWrap {
+      padding: 10px;
+    }
+  }
+  
+  
+  
+  /* Main content styling */
+  main {
+    background-color: var(--main-bg);
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px var(--main-shadow);
+    border-radius: 5px;
+    justify-content: center;
+    
+
+  }
+  
+  fieldset {
+    padding: 30px
+  }
+
+  ul {
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+
+  /* Footer styling */
+  /* Footer Styling to Match the Header */
+/* Footer Styling with Darker Color Scheme */
+footer {
+    background: linear-gradient(135deg, #1c1c1c, #121212);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    text-align: center;
+    color: #ccc;
+  }
+  
+  /* Footer Heading */
+  footer h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+    color: #eee;
+  }
+  
+  /* Footer Navigation Styling */
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Navigation Button-Like Links in Footer */
+  footer nav a {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  footer nav a:hover {
+    background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  /* Footer Paragraphs */
+  footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Validation Links */
+  footer a.validate {
+    text-decoration: none;
+  }
+  
+  footer a.validate img {
+    border: 0;
+    width: 88px;
+    height: 31px;
+  }  
+  
+  /* Link styling with smooth hover effect */
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--link-hover);
+  }
+  
+  /* Headings styling */
+  h2,h3 {
+    color: var(--heading-color);
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph spacing */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+    header, main, footer {
+      padding: 15px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

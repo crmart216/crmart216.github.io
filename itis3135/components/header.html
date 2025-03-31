@@ -1,21 +1,42 @@
-<h1>Ryan Martin's Real Monkey || ITIS 3135 || Home</h1>
-<div class="navWrap">
-    <nav class="navigate left">
-        <a href = "./">Home</a>
-        ||
-        <a href = "introduction.html">Introduction</a>
-        ||
-        <a href = "contract.html">Contract</a>
-        ||
-        <a href = "website_evaluations.html">Website Evaluations</a>
-        ||
-        <a href = "tables.html">Tables</a>
-        ||
-        <a href = "./hobby">Hobby</a>
-    </nav>
-    <nav class="navigate right">
-        <a href = "./realmonkeyconglomeracy/about.html">About Real Monkey</a> ||
-        <a href = "./rytimecorp.org/index.html">RytimeCorp</a> ||
-        <a href = "./stuff/YoUr.-mOm's p4ag3.htm">Crapy Page</a>
-    </nav>
+<div class="page-title-wrap">
+  <h1 class = "page-title">Ryan Martin's Real Monkey || ITIS 3135 || </h1><h1 class = "page-title" id = "titleText">Home</h1>
+</div>
+<script src="./scripts/header.js"></script>
+<!-- Full navigation for larger screens -->
+<div class="navWrap large-nav">
+  <nav class="navigate left">
+    <a href="./" id="homeButton">Home</a>
+    <a href="introduction.html" id="introButton">Introduction</a>
+    <a href="contract.html" id="contractButton">Contract</a>
+    <a href="website_evaluations.html" id="evalButton">Website Evaluations</a>
+    <a href="tables.html" id="tableButton">Tables</a>
+    <a href="./byo_intro.html">BYO Intro</a>
+    <a href="./hobby" id="hobbyButton">Hobby</a>
+  </nav>
+  <nav class="navigate right">
+    <a href="./realmonkeyconglomeracy/about.html" id="monkeyButton">About Real Monkey</a>
+    <a href="./rytimecorp.org/index.html" id="corpButton">RytimeCorp</a>
+    <a href="./stuff/YoUr.-mOm's p4ag3.htm" id="crapButton">Crapy Page</a>
+  </nav>
+</div>
+
+<!-- Dropdown navigation for smaller screens -->  
+<div class="navWrap small-nav">
+  <select class="navDropdown leftDown" onchange="if (this.value) window.location.href=this.value">
+    <option value="">Menu</option>
+    <option value="./">Home</option>
+    <option value="introduction.html">Introduction</option>
+    <option value="contract.html">Contract</option>
+    <option value="website_evaluations.html">Website Evaluations</option>
+    <option value="tables.html">Tables</option>
+    <option value="./byo_intro.html">BYO Intro</option>
+    <option value="./hobby">Hobby</option>
+  </select>
+
+  <select class="navDropdown rightDown" onchange="if (this.value) window.location.href=this.value">
+    <option value="">Company</option>
+    <option value="./realmonkeyconglomeracy/about.html">About Real Monkey</option>
+    <option value="./rytimecorp.org/index.html">RytimeCorp</option>
+    <option value="./stuff/YoUr.-mOm's p4ag3.htm">Crapy Page</option>
+  </select>
 </div>

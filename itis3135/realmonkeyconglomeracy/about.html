@@ -1,77 +1,140 @@
 <!DOCTYPE html>
-<!--Color palet
-#e2f1af -- tax green
-#e3d888 -- flax (yellow)
-#84714f -- coyote (tan brown)
-#5a3a31 -- rose ebony (brown red)
-#31231e -- bistre (coffee brown)
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Monkey Conglomeracy</title>
     <style>
-        html {
-            font-family: sans-serif;
+        :root {
+            --bg-color: #31231e;
+            --font-color: #000;
+            --header-bg: #5a3a31;
+            --header-shadow: rgba(90, 58, 49, 0.5);
+            --main-bg: #e3d888;
+            --main-shadow: rgba(132, 113, 79, 0.5);
+            --footer-bg: #84714f;
+            --link-color: rgb(227, 255, 116);
+            --link-hover: green;
+            --heading-color: #31231e;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #31231e;
+            background-color: var(--bg-color);
+            font-family: Arial, sans-serif;
+            color: var(--font-color);
+            max-width: 1800px;
+            width: 98%;
+            margin: 0 auto;
+            line-height: 1.6;
+            padding: 20px;
         }
+
         header {
-            background-color: #5a3a31;
-            padding: 5px;
-            padding-bottom: 25px;
+            background: linear-gradient(135deg, #5a3a31, #84714f);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            color: #e2f1af;
+            box-shadow: 0 8px 16px var(--header-shadow);
+            border-radius: 8px;
         }
-        main {
-            background-color: #e3d888;
-            padding: 5px;
-            margin-top: 10px;
-        }
-        footer {
-            background-color: #84714f;
-            padding: 5px;
-            margin-top: 10px;
-        }
-        .right {
-            position: absolute;
-            right: 2%;
-        }
-        a {
-            color: black;
-        }
-        a:hover {
-            color: green;
-        }
-        a.navlinks {
-            color: rgb(207, 207, 207);
-        }
-        a.navlinks:hover {
-            color: green;
-        }
+
         nav {
-            color: rgb(50,50,50);
+            margin-top: 15px;
+            background-color: var(--header-bg);
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
         }
-        
+
+        nav a {
+            color: #e2f1af;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #84714f;
+            color: #e3d888;
+        }
+
+        main {
+            background-color: var(--main-bg);
+            margin: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px var(--main-shadow);
+            border-radius: 8px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #84714f, #5a3a31);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            color: #e2f1af;
+            box-shadow: 0 8px 16px var(--header-shadow);
+            border-radius: 8px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+        }
+
+        h2, h3 {
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header, main, footer {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Real Monkey Cloud Storage</h1>
-        <nav class="navigate right">
-            <a class="navlinks" href = "./about.html">About Real Monkey</a> ||
-            <a class="navlinks" href = "../rytimecorp.org/index.html">RytimeCorp</a> ||
-            <a class="navlinks" href = "../stuff/YoUr.-mOm's p4ag3.htm">Crapy Page</a>
+        <nav>
+            <a href="./about.html">About Real Monkey</a>
+            <a href="../rytimecorp.org/index.html">RytimeCorp</a>
+            <a href="../stuff/YoUr.-mOm's p4ag3.htm">Crapy Page</a>
         </nav>
     </header>
+
     <main>
         <h2>Real Monkey</h2>
         <p>Here at Real Monkey Inc. we provide only the best of everything. That's right, you heard it, EVERYTHING. If your question is
-            "do we have it?" our answer is "yes." In addition to this, rytimeCorp provides unlimted free cloud service to anyone willing
-            sign over all their assets to rytimeCorp! That's right, give us all your stuff, and have accsess to everyone else's stuff in
+            "do we have it?" our answer is "yes." In addition to this, rytimeCorp provides unlimited free cloud service to anyone willing
+            sign over all their assets to rytimeCorp! That's right, give us all your stuff, and have access to everyone else's stuff in
             the company! Join rytimeCorp today for a better and brighter future!! :)</p>
         <p>You can find more information about our company: <a href="./">here</a></p>
     </main>
+
     <footer>
         <p><i>Real storage comes from a Real Monkey.</i></p>
         <p>Designed by <a href="../rytimecorp.org">rytimeCorp</a></p>

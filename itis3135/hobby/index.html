@@ -109,7 +109,7 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script>
         function showSection(sectionId) {
-            document.querySelectorAll('section').forEach(section => {
+            document.querySelectorAll('section').forEach((section) => {
                 section.classList.remove('active');
             });
             document.getElementById(sectionId).classList.add('active');
@@ -122,6 +122,7 @@
     </header>
     
     <nav>
+        <a href="../index.html">Home</a>
         <a href="#" onclick="showSection('home')">What is my hobby</a>
         <a href="#" onclick="showSection('best-times')">Best Times</a>
         <a href="#" onclick="showSection('best-locations')">Best Locations</a>
@@ -138,8 +139,8 @@
             <figure>
                 <img src="./images/cooking-home.webp" alt="A delicious meal being prepared">
                 <figcaption>Cooking brings joy and creativity to life.</figcaption>
-                <p class="image-description">A beautifully plated homemade meal, showcasing the creativity and passion of cooking.</p>
             </figure>
+            <p class="image-description">A beautifully plated homemade meal, showcasing the creativity and passion of cooking.</p>
         </section>
         
         <section id="best-times">
@@ -149,8 +150,8 @@
             <figure>
                 <img src="./images/cooking-times.webp" alt="Cooking at different times of the day">
                 <figcaption>Each time of the day offers unique cooking opportunities.</figcaption>
-                <p class="image-description">A collection of cooking scenes representing morning, afternoon, and evening meal preparation.</p>
             </figure>
+            <p class="image-description">A collection of cooking scenes representing morning, afternoon, and evening meal preparation.</p>
         </section>
         
         <section id="best-locations">
@@ -160,8 +161,8 @@
             <figure>
                 <img src="./images/market.webp" alt="Fresh produce at a market">
                 <figcaption>Fresh ingredients lead to the best meals.</figcaption>
-                <p class="image-description">A vibrant farmer's market with fresh fruits, vegetables, and other ingredients for cooking.</p>
             </figure>
+            <p class="image-description">A vibrant farmer's market with fresh fruits, vegetables, and other ingredients for cooking.</p>
         </section>
         
         <section id="why">
@@ -171,8 +172,8 @@
             <figure>
                 <img src="./images/cooking-why.webp" alt="Happy people enjoying a meal">
                 <figcaption>Cooking brings people together.</figcaption>
-                <p class="image-description">A group of friends and family enjoying a home-cooked meal together, highlighting the joy of cooking.</p>
             </figure>
+            <p class="image-description">A group of friends and family enjoying a home-cooked meal together, highlighting the joy of cooking.</p>
         </section>
 
         <section id="how">
@@ -188,8 +189,8 @@
             <figure>
                 <img src="./images/cooking-why.webp" alt="Happy people enjoying a meal">
                 <figcaption>Cooking brings people together.</figcaption>
-                <p class="image-description">A group of friends and family enjoying a home-cooked meal together, highlighting the joy of cooking.</p>
             </figure>
+            <p class="image-description">A group of friends and family enjoying a home-cooked meal together, highlighting the joy of cooking.</p>
         </section>
 
         <section id="chat-history">
@@ -198,8 +199,8 @@
             <figure>
                 <img src="./images/ai.webp" alt="Happy people enjoying a meal">
                 <figcaption>AI Dominates the world</figcaption>
-                <p class="image-description">Below is a list of every prompt I used to create this website. CHAT-GPT 4o was used</p>
             </figure>
+            <p class="image-description">Below is a list of every prompt I used to create this website. CHAT-GPT 4o was used</p>
             <ul>
                 <li>Style this webpage, using a blue green color scheme</li>
                 <li>Create sections which will represent each "page" (there is a section tag/element in html) for each of the pages that will make up your hobby site. These sections will be within your main:

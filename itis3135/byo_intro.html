@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro || ITIS 3155 || BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/byo.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("./components/header.html");
+        });
+        $(function() {
+            $('#footer').load("./components/footer.html");
+        });
+    </script>
+    <script src ="./scripts/byo.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form id="introForm">
+            Name: <input type="text" id="name" placeholder="John Doe" name="notCourse" required><br><br>
+            Mascot: <input type="text" id="mascot" placeholder="Lion" name="notCourse"  required><br><br>
+            Image: <input type="file" id="image" accept="image/png, image/jpeg" required><br><br>
+            Image Caption: <input type="text" id="imageCaption" placeholder="Me at the beach" name="notCourse" required><br><br>
+            Personal Background: <input type="text" id="personalBackground" placeholder="I love traveling" name="notCourse" required><br><br>
+            Professional Background: <input type="text" id="professionalBackground" placeholder="Intern at XYZ Corp" name="notCourse"  required><br><br>
+            Academic Background: <input type="text" id="academicBackground" placeholder="Sophomore at UNC Charlotte" name="notCourse"  required><br><br>
+            Background in Web Development: <input type="text" id="webDevBackground" placeholder="Intermediate HTML/CSS/JS" name="notCourse"  required><br><br>
+            Primary Computer Platform: <input type="text" id="computerPlatform" placeholder="Windows" name="notCourse"  required><br><br>
+            <div id="courses">
+                Courses currently taking:<br>
+                <button type="button" id="addCourseButton">Add Course</button><br><br>
+            </div>
+            Funny thing? <input type="text" id="funnyThing" name="notCourse"  placeholder="I talk to my plants"><br><br>
+            Anything else? <input type="text" id="anythingElse" name="notCourse"  placeholder="Excited for the semester"><br><br>
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="formOutput"></div>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
