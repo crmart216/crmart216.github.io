@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/overview.css">
+    <title>Client Project Overview</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#footer').load("./components/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Client Project Overview</h1>
+            <div class="navWrap large-nav">
+                <nav class="navigate left">
+                    <a href = "#">Overview</a>
+                    <a href = "#">About</a>
+                    <a href = "#">Tickers</a>
+                    <a href = "#">Invest advisor</a>
+                    <a href = "#">Adivice</a>
+                    <a href = "#">Contact & Support</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Project Overview</h2>
+        <h3>Application and Purpose</h3>
+            <p>The purpose of the application is to generate income by providing users financial advice and demonstrating expertise in financial success.</p>
+        <h3>Intended Users:</h3>
+            <p>General public, specifically anyone interested in financial growth and investment strategies.</p>
+        <h3>Content Overview:</h3>
+            <p>The website will provide financial advice, personal success stories, investment strategies, testimonials, and interactive tools for financial planning.</p>
+        <h3>Client Information</h3>
+        <ul>
+            <li>Client Name: Sebi</li>
+            <li>Organization: Individual Entrepreneur</li>
+            <li>Email: [private]</li>
+            <li>Phone: 123-456-7891</li>
+        </ul>
+        <h3>Sitemap</h3>
+        <div>
+            <figure>
+                <img src = "./images/sitemap.png" alt ="Sitemap Layout Image">
+                <figcaption>Sitemap layout that includes each of the 5 webpages</figcaption>
+            </figure>
+            <fieldset>
+                <legend>Sitemap Description</legend>
+                <div>
+                    <div>
+                        <h3>Main page</h3>
+                        <p><strong>Purpose:</strong> To Describe the overview of the application</p>
+                        <p><strong>Audience:</strong> Those trying to make money</p>
+                        <p><strong>Content:</strong> Summary of the application</p>
+                        <p><strong>Entering Data:</strong> no</p>
+                        <p><strong>Buttons/Dropdown</strong> no</p>
+                        <p><strong>Actions:</strong> Text and summary, no actions</p>
+                        <p><strong>Notes:</strong> None</p>
+                    </div>
+                    <div>
+                        <h3>About Financial Advisor</h3>
+                        <p><strong>Purpose:</strong> To give credibility to the company's financial advisor (Sebi)</p>
+                        <p><strong>Audience:</strong> Those who are interested in sebi as their advisor</p>
+                        <p><strong>Content:</strong> Summary of sebi's achievments</p>
+                        <p><strong>Entering Data:</strong> no</p>
+                        <p><strong>Buttons/Dropdown</strong> no</p>
+                        <p><strong>Actions:</strong> Text and summary, no actions</p>
+                        <p><strong>Notes:</strong> None</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Stock Ticker Information</h3>
+                        <p><strong>Purpose:</strong> To display stock ticker information that updates automatically</p>
+                        <p><strong>Audience:</strong> Those seeking stock data</p>
+                        <p><strong>Content:</strong> Top 20 stocks, their prices and trends</p>
+                        <p><strong>Entering Data:</strong> no</p>
+                        <p><strong>Buttons/Dropdown</strong> yes, drop down menu for filter</p>
+                        <p><strong>Actions:</strong> To be able to sort data based on factors</p>
+                        <p><strong>Notes:</strong> Will update autmoatically</p>
+                    </div>
+                    <div>
+                        <h3>Where to invest</h3>
+                        <p><strong>Purpose:</strong> To give people our best guess as where the best places to invest are</p>
+                        <p><strong>Audience:</strong> Those seeking invest advice</p>
+                        <p><strong>Content:</strong> The top 5 companies we think you should invest in</p>
+                        <p><strong>Entering Data:</strong> no</p>
+                        <p><strong>Buttons/Dropdown</strong> no</p>
+                        <p><strong>Actions:</strong> none</p>
+                        <p><strong>Notes:</strong> Will update automatically</p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <fieldset class="field2">
+            <div>
+                <h3>Financial Advice Subscription</h3>
+                <p><strong>Purpose:</strong> To inform people about our financial service</p>
+                <p><strong>Audience:</strong> Those seeking financial assistance</p>
+                <p><strong>Content:</strong> A page where users can add or remove their subscription</p>
+                <p><strong>Entering Data:</strong> Yes: Payment information and account information</p>
+                <p><strong>Buttons/Dropdown</strong> Yes</p>
+                <p><strong>Actions:</strong> Submiting information</p>
+                <p><strong>Notes:</strong> Won't actually record payment information</p>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <p><strong>Purpose:</strong> To show people where they can find support information</p>
+                <p><strong>Audience:</strong> Those seeking help</p>
+                <p><strong><strong>Content:</strong></strong> Contact information and FAQ page</p>
+                <p><strong>Entering Data:</strong> no</p>
+                <p><strong>Buttons/Dropdown</strong> no</p>
+                <p><strong>Actions: </strong>none</p>
+                <p><strong>Notes:</strong> None</p>
+            </div>
+        </fieldset>
+        <h3>Dynamic Functionality</h3>
+            <p>The website will include three webpages with dynamic integration. The first will be a webpage that displays the top 20 stocks based on stock price.
+                The user will be able to organize the top 20 stocks based on stock price, projected growth, or alphabetically.
+                The stock prices will also update automatically based on current data from yahoo-fin's stock api. In addition to this, I will write a script that 
+                will put together, from the top 20 stocks, what it thinks the user should invest in right now, based on current growth. The third webpage will include a form
+                that will allow the user to subscribe or hire a personal financial advisor. The user must be able to enter their payment information and create an account. 
+            </p>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

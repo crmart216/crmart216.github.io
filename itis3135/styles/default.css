@@ -208,7 +208,7 @@ header {
   
   
   /* Media Query to handle menu responsiveness */
-  @media (max-width: 1150px) {
+  @media (max-width: 1200px) {
     .large-nav {
       display: none;
     }
