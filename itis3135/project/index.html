@@ -3,30 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/overview.css">
-    <title>Client Project Overview</title>
+    <link rel="stylesheet" href="../styles/overview.css">
+    <title>Client Project || Overview</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script>
-        $(function() {
-            $('#footer').load("./components/footer.html");
-        });
-    </script>
+    <script src="../scripts/loadHeaderFooter.js" id="load" data-info="..,projectHeader.html"></script>
 </head>
 <body>
     <header>
-        <div>
-            <h1>Client Project Overview</h1>
-            <div class="navWrap large-nav">
-                <nav class="navigate left">
-                    <a href = "#">Overview</a>
-                    <a href = "#">About</a>
-                    <a href = "#">Tickers</a>
-                    <a href = "#">Invest advisor</a>
-                    <a href = "#">Adivice</a>
-                    <a href = "#">Contact & Support</a>
-                </nav>
-            </div>
+        <div id="header">
+            
         </div>
     </header>
     <main>
@@ -47,7 +33,7 @@
         <h3>Sitemap</h3>
         <div>
             <figure>
-                <img src = "./images/sitemap.png" alt ="Sitemap Layout Image">
+                <img src = "../images/sitemap.png" alt ="Sitemap Layout Image">
                 <figcaption>Sitemap layout that includes each of the 5 webpages</figcaption>
             </figure>
             <fieldset>
@@ -86,14 +72,14 @@
                         <p><strong>Notes:</strong> Will update autmoatically</p>
                     </div>
                     <div>
-                        <h3>Where to invest</h3>
-                        <p><strong>Purpose:</strong> To give people our best guess as where the best places to invest are</p>
+                        <h3>Advice</h3>
+                        <p><strong>Purpose:</strong> Show 20 Tips on how to stay rich</p>
                         <p><strong>Audience:</strong> Those seeking invest advice</p>
-                        <p><strong>Content:</strong> The top 5 companies we think you should invest in</p>
+                        <p><strong>Content:</strong> 20 tips on how to stay rich</p>
                         <p><strong>Entering Data:</strong> no</p>
                         <p><strong>Buttons/Dropdown</strong> no</p>
                         <p><strong>Actions:</strong> none</p>
-                        <p><strong>Notes:</strong> Will update automatically</p>
+                        <p><strong>Notes:</strong> N/A</p>
                     </div>
                 </div>
             </fieldset>
@@ -116,7 +102,7 @@
                 <p><strong><strong>Content:</strong></strong> Contact information and FAQ page</p>
                 <p><strong>Entering Data:</strong> no</p>
                 <p><strong>Buttons/Dropdown</strong> no</p>
-                <p><strong>Actions: </strong>none</p>
+                <p><strong>Actions: </strong> none</p>
                 <p><strong>Notes:</strong> None</p>
             </div>
         </fieldset>

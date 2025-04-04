@@ -7,14 +7,26 @@ footer: 462749
 */
 
 :root {
-    --background: #bad1cd;
+    /* --background: #bad1cd;
     --text: #f2d1c9;
     --header: #e086d3;
     --main: #8332acb9;
     --footer: #462749;
     --nav-wrap: #9f5e95;
     --link-color: rgb(255,255,255);
-    --link-hover: rgb(0,255,136);
+    --link-hover: rgb(0,255,136); */
+    
+    --background: #99b4d2;      /* Very light sky blue */
+  --text: #1c2c3a;            /* Deep navy text for strong readability */
+  --header: #3d7edb;          /* Bright royal blue header/nav */
+  --main: #a9c7f2;            /* Soft blue for containers */
+  --footer: #2a4f7a;          /* Medium-dark blue footer */
+  --nav-wrap: #75aaff;        /* Light but punchy blue accent */
+  --link-color: #ffffff;      /* White for contrast on buttons/nav */
+  --link-hover: #00c7b1;
+  
+    
+    
 }
 
 * {
@@ -38,17 +50,25 @@ body {
 
 header {
     font-size: 2.0rem;
-    overflow: auto;
+    overflow: hidden;
     font-weight: bold;
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 8px 16px #8e2a7f;
+    box-shadow: 0 8px 16px #00ddff;
     margin: 10px;
     margin-bottom: 20px;
     background-color: var(--header);
     border-radius: 8px;
   }
+
+header h1 {
+  display: inline-block;
+}
+
+header h1:last-of-type {
+  margin-left: 18px;
+}
 
 
 header nav a:hover {
@@ -84,7 +104,227 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     overflow: auto;
+
 }
+
+
+.page-header {
+  background-color: var(--header);
+  padding: 30px;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.main-container {
+  display: block;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--header);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+.section {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: var(--link-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-form {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-input,
+.form-textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-button {
+  padding: 12px 24px;
+  background: var(--link-hover);
+  color: #000;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background: #00e692;
+}
+
+.info-box {
+  display: block;
+  text-align: center;
+  background-color: var(--nav-wrap);
+  padding: 15px 20px;
+  border-left: 6px solid var(--link-hover);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header2 {
+  display: block;
+  text-align: center;
+}
+
+.header2 h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.container2 {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--header);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  display: block;
+  color: rgb(255, 255, 255);
+}
+
+.tip {
+  background-color: var(--nav-wrap);
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-left: 6px solid var(--link-hover);
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.tip:hover {
+  background-color: var(--header);
+}
+
+.aboutPart2{
+  display: flex;
+}
+.aboutImage {
+  width: 100px;
+  height: auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: block;
+  border-radius: 8px;
+  border: 5px solid rgb(95, 95, 95);
+}
+
+.ad {
+  background-color: #e0f7fa;
+  border-left: 5px solid #00bcd4;
+  padding: 15px;
+  margin: 20px 0;
+  color: black;
+}
+
+.subscription-box {
+  text-align: center;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #f1f1f1, #b9f2ff);
+  border: 3px solid #00bcd4;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: popIn 0.7s ease-out;
+  display: block;
+  color: black;
+}
+
+.subscription-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px #00ff44;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.subscription-box h2 {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 12px;
+  width: 320px;
+  max-width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+  border: 1px solid var(--link-hover);
+}
+
+button {
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0097a7;
+}
+
+
 
 main h2 {
     font-size: 2.0rem;
@@ -129,7 +369,7 @@ main div {
 
 main fieldset {
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     float: right;
     border: dashed;
     width: 100%;
@@ -150,10 +390,6 @@ main fieldset p {
 main fieldset h3 {
     padding: 3px;
     margin-left: 3px;
-}
-
-main fieldset strong {
-    color: #b69c96;
 }
 
 .field2 {
