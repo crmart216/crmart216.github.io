@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home || ITIS 3135 || Slideshow</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="stylesheet" href="styles/slideshow.css">
+        <script type="text/javascript" src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./scripts/loadHeaderFooter.js" id="load" data-info=".,header.html"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header"></div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="slides">
+                    <img src="images/slide1.jpg" style="width:100%" alt="R - Real People at the bar">
+                    <div class="numbertext">1 / 8</div>
+                </div>
+                <div class="slides">
+                    <img src="images/slide2.jpg" style="width:100%" alt="E - Enticing sights on campus">
+                    <div class="numbertext">2 / 8</div>
+                </div>
+                <div class="slides">
+                    <img src="images/slide3.jpg" style="width:100%" alt="A - Amazingn Charlotte Skyline">
+                    <div class="numbertext">3 / 8</div>
+                </div>
+                <div class="slides">
+                    <img src="images/slide4.jpg" style="width:100%" alt="L - Looking in the distance">
+                    <div class="numbertext">4 / 8</div>
+                </div>
+            
+                <div class="slides">
+                    <img src="images/slide5.jpg" style="width:100%" alt="M - Marvolous Atkins Library">
+                    <div class="numbertext">5 / 8</div>
+                </div>
+                <div class="slides">
+                    <img src="images/slide6.jpg" style="width:100%" alt="O - Overlooking Mountains">
+                    <div class="numbertext">6 / 8</div>
+                </div>
+                <div class="slides">
+                    <img src="images/slide7.jpg" style="width:100%" alt="N - Nicely Organized Parking Lot">
+                    <div class="numbertext">7 / 8</div>
+                </div>
+                <div class="slides">
+                    <img src="images/slide8.jpg" style="width:100%" alt="K - Key to Parallele Parking">
+                    <div class="numbertext">8 / 8</div>
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">Prev</button>
+                <button class="next" onclick="plusSlides(1)">Next</button>
+                <div class="row">
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="R - Real People at the bar">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="E - Enticing sights on campus">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="A - Amazingn Charlotte Skyline">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="L - Looking in the distance">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="M - Marvolous Atkins Library">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide6.jpg" style="width:100%" onclick="currentSlide(6)" alt="O - Overlooking Mountains">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide7.jpg" style="width:100%" onclick="currentSlide(7)" alt="N - Nicely Organized Parking Lot">
+                    </div>
+                    <div class="column">
+                        <img class="thumb cursor" src="images/slide8.jpg" style="width:100%" onclick="currentSlide(8)" alt="K - Key to Parallele Parking">
+                    </div>
+                </div>
+            </div> 
+            <script type="text/javascript" src="./scripts/slideshow.js"></script>
+        </main>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+    </body>
+</html>
