@@ -35,7 +35,48 @@ footer: 462749
     font-family: sans-serif;
 }
 
+select {
+  width: 220px;           /* wider box */
+  height: 48px;           /* taller box */
+  padding: 8px 12px;      /* space inside */
+  font-size: 1.1rem;      /* larger text */
+  line-height: 1.2;
+  
+  color: #fff;            /* text color */
+  background-color: #75aaff;  /* green background */
+  
+  border: 3px solid #2a4f7a;  /* darker green border */
+  border-radius: 8px;      /* rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
+  /* remove default arrow in some browsers so custom arrow can show: */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%227%22%20viewBox%3D%220%200%2010%207%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200l5%207%205-7z%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
 
+
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Optional: style the options when the list is open */
+select option {
+  background-color: #E8F5E9;
+  color: #75aaff;
+  padding: 4px;
+}
+
+/* Optional: focus state */
+select:focus {
+  outline: none;
+  border-color: #75aaff;
+  box-shadow: 0 0 0 3px rgba(17, 88, 98, 0.3);
+}
 
 body {
     background-color: var(--background);

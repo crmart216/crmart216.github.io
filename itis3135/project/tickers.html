@@ -19,7 +19,12 @@
         <main>
             <div class="header2">
                 <h1>Top 20 Stocks</h1>
-                <p>Top 20 Based on Percent Change</p>
+                <p>Top 20 Based on <span id = "filterTitle">Percent Change</span></p>
+                <select class="stock_filter" id = "filter_drop_down">
+                    <option value= "change" >Percent Change</option>
+                    <option value = "price" >Stock Price</option>
+                    <option value = "mostTraded">Number of Trades</option>
+                  </select>
               </div>
               <div class="container2">
                 <div class="tip">STOCK</div>
@@ -43,6 +48,7 @@
                 <div class="tip">STOCK</div>
                 <div class="tip">STOCK</div>
               </div>
+              <p><i>Data Scraped from <a href = "https://polygon.io/" target = "_blank">polygon.io</a></i></p>
               <script type = "text/javascript" src = "../scripts/loadstocks.js"></script>
         </main>
         <footer>
